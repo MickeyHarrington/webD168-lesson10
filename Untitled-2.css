@@ -49,13 +49,14 @@ body{
     transition-duration: 1000ms;
         transition-property: transform;
         transition-timing-function: cubic-bezier(1, .11, .22, 1.41);
-        
+        opacity: .5;
 }
 .picme:hover #picofme{
     transform: rotate(45deg);
 	animation-name: fadeInOpacity;
 	animation-timing-function: ease-in-out;
-	animation-duration: 1.5s;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
 }
 
 @keyframes fadeInOpacity {
