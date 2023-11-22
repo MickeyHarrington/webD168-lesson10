@@ -1,0 +1,79 @@
+@charset "UTF-8";
+/* CSS Document */
+body{
+    background: linear-gradient(lightblue,white);
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+    width: 1080px;
+    margin: 50px auto;
+    padding: 1px;
+    border: none;
+    box-shadow: 1px 13px 50px 20px white;
+    border-radius: 0px;
+    }
+    
+      
+    img{
+        border-radius: 20px;
+        align-content: center;
+    }
+    header h1 {
+        text-align: center;
+        font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+        word-spacing: .3em;
+        font-size: 60px;  
+    }
+    footer {
+        text-align: center;
+    }
+    .col{
+        background: #fff;
+        border-radius: 20px;
+        padding: 20px 9px;
+        box-shadow: rgba(17,12,46,10.15) 0px 48px 100px 0px;
+        gap: 30px;    
+    }
+    .picme{
+        text-align: center;
+        background: #fff;
+        border-radius: 20px;
+        padding: 20px 9px;
+        box-shadow: rgba(17,12,46,10.15) 0px 48px 100px 0px;
+        gap: 30px;
+    }
+    .container{
+	display:flex;
+    gap: 30px;
+    padding: 20px;
+}
+#picofme{
+    transition-duration: 1000ms;
+        transition-property: transform;
+        transition-timing-function: cubic-bezier(1, .11, .22, 1.41);
+        
+}
+.picme:hover #picofme{
+    transform: rotate(45deg);
+	animation-name: fadeInOpacity;
+	animation-timing-function: ease-in-out;
+	animation-duration: 1.5s;
+}
+
+@keyframes fadeInOpacity {
+	0% {
+		opacity: .5;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@media (min-width: 300px){
+	body{
+        width: 100%;
+	}
+    .container{
+        flex-direction: row;
+        display: grid;
+    }
+}
+
+    
